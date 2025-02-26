@@ -1,0 +1,14 @@
+# bash alias
+
+alias ..='cd ..'
+
+alias rm='rm -iv'
+alias cp='cp -iv'
+alias mv='mv -iv'
+
+## prevent accidentally clobbering files
+alias mkdir='mkdir -pv'
+
+alias ls='ls -ahoF --group-directories-first --color=always'
+
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
