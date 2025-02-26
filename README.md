@@ -2,6 +2,11 @@
 - Fedora Workstation
 - Asus VivoBook\_ASUSLaptop X580GD\_N580GD
 
+## Change hostname
+
+```bash
+$ sudo hostnamectl set-hostname "fedora-asus"
+```
 
 ## Speed up dnf
 
