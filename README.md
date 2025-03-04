@@ -41,20 +41,19 @@ config remote set-url --add origin git@github.com:Majramos/dotfiles_fedora_works
 
 ## Configure Gnome
 Set Wallpaper
-```
+```bash
 gsettings set org.gnome.desktop.background picture-uri file://$HOME/Pictures/oram_blue_moon.jpg
 gsettings set org.gnome.desktop.background picture-uri-dark file://$HOME/Pictures/oram_blue_moon.jpg
 ```
 set dark mode
-```
+```bash
 gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 ```
 set to sort directories first in file manager (Nautilus)
-```
+```bash
 gsettings set org.gtk.gtk4.Settings.FileChooser sort-directories-first true
 ```
 set up boot up graphical theme
-```
+```bash
 plymouth-set-default-theme spinfinity -R
 ```
-
