@@ -9,15 +9,14 @@ $ sudo hostnamectl set-hostname "fedora-asus"
 ```
 
 ## Speed up dnf
-
-```bash
-$ sudo nano /etc/dnf/dnf.conf
-```
 append to `dnf.conf`: *max_parallel_downloads=10*
+```bash
+$ echo 'max_parallel_downloads=10' | sudo tee -a /etc/dnf/dnf.conf
 ```
-[main]
-...
-max_parallel_downloads=10
+
+## Enable Flathub
+```bash
+$ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 ```
 
 ## Setup git default branch name
