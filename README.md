@@ -1,5 +1,5 @@
 # My configuration files
-- Fedora Workstation
+- Fedora 41 Workstation
 - Asus VivoBook\_ASUSLaptop X580GD\_N580GD
 
 ## Change hostname
@@ -37,6 +37,32 @@ echo "alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" 
 config remote add origin git@gitlab.com:majramos/dotfiles_fedora_workstation.git
 config remote set-url --add origin git@github.com:Majramos/dotfiles_fedora_workstation.git
 ```
+
+## Packages to install
+
+```bash
+$ sudo dnf install \
+    git \
+    gnome-tweaks \
+    htop \
+    libgtop2-devel \
+    lm_sensors \
+    # bootup sequence theme
+    plymouth-theme-spinfinity \
+    podman-compose \
+    timeshift \
+    vim-enhanced
+
+curl -f https://zed.dev/install.sh | sh
+
+$ sudo flatpak install flathub com.mattjakeman.ExtensionManager
+```
+
+### install gnome extensions with extension manager
+- AppIndicator and KStatusNotifierItem Support
+- Search Light
+- Tiling Assistant
+- Vitals
 
 ## Configure Gnome
 Set Wallpaper
